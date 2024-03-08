@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The handwritten digits recognizer application allows users to draw on a canvas and determine the most likely digit that was written on the canvas.
+The handwritten digits recognizer application allows users to draw on a canvas to determine the most likely digit that was written on the canvas.
 
 The application has a client-server architecture. For the client-side application Angular framework was used, however, on the server side Flask framework in Python. Training and evaluation were done based on the MNIST (Modified National Institute of Standards and Technology) datasets.
 

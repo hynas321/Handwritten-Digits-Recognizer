@@ -6,6 +6,8 @@ The handwritten digits recognizer application allows users to draw on a canvas a
 
 The application has a client-server architecture. For the client-side application Angular framework was used, however, on the server side Flask framework in Python. Training and evaluation were done based on the MNIST (Modified National Institute of Standards and Technology) datasets.
 
+![Uploading Screenshot 2024-03-08 154500.png…]()
+
 ## Program Installation
 
 In order to run the web application the whole project needs to be set up in the command line. The commands are shown below

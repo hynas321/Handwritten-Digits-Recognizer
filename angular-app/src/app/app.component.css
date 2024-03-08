@@ -1,0 +1,15 @@
+.framed-text {
+    text-shadow:
+    -1px -1px 0 #000,
+    0px -0px 0 #000,
+    -1px -1px 0 #000,
+    0px 0px 0 #000;
+}
+
+.background-image {
+    background-image: url('./../assets/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

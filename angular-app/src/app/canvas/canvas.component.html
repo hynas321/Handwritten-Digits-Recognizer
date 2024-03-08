@@ -1,0 +1,26 @@
+<div>
+  <canvas
+    #canvasRef
+    width="280px"
+    height="280px"
+    class="border border-5 border-{{canvasBorderColor}} rounded-3 canvas-scale img-responsive"
+    (mouseenter)="onMouseEnterCanvas()"
+    (mouseleave)="onMouseLeaveCanvas()"
+    [class.circle-cursor]="isCursorOverCanvas"
+    (mousedown)="onMouseDown($event)"
+  ></canvas>
+</div>
+<div>
+  <app-button
+    text="Recognize"
+    bootstrapButtonType="btn-success"
+    margin="5px 5px"
+    (onClick)="handleRecognizeButtonClick($event)"
+  />
+  <app-button
+    text="Clear canvas"
+    bootstrapButtonType="btn-danger"
+    margin="5px 5px"
+    (onClick)="handleClearCanvasButtonClick($event)"
+  />
+</div>

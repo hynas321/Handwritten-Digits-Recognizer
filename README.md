@@ -6,7 +6,7 @@ The handwritten digits recognizer application allows users to draw on a canvas t
 
 The application has a client-server architecture. For the client-side application Angular framework was used, however, on the server side Flask framework in Python. Training and evaluation were done based on the MNIST (Modified National Institute of Standards and Technology) datasets.
 
-![Uploading Screenshot 2024-03-08 154500.png…]()
+![canvas](https://github.com/hynas321/Handwritten-Digits-Recognizer/assets/76520333/1b9ffa77-70b0-4c29-9aab-82b754862f6e)
 
 ## Program Installation
 

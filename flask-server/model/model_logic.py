@@ -15,6 +15,9 @@ def train_model(
     with open("./mnist_dataset/mnist_train.csv", 'r') as training_data_file:
         training_data_list = training_data_file.readlines()
 
+    with open("./mnist_dataset/mnist_test.csv", 'r') as test_data_file:
+        test_data_list = test_data_file.readlines()
+
     best_accuracy = 0.0
     no_improve_count = 0
     start_time = time.time()
@@ -28,7 +31,7 @@ def train_model(
             targets[int(all_values[0])] = 0.99
             model.train(inputs, targets)
 
-        accuracy = evaluate_model(model)
+        accuracy = evaluate_model(model, test_data_list)
 
         if accuracy > best_accuracy:
             best_accuracy = accuracy
@@ -48,10 +51,7 @@ def train_model(
 
     return model
 
-def evaluate_model(model):
-    with open("./mnist_dataset/mnist_test.csv", 'r') as test_data_file:
-        test_data_list = test_data_file.readlines()
-
+def evaluate_model(model, test_data_list):
     scorecard = []
 
     for record in test_data_list:
